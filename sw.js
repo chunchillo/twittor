@@ -2,7 +2,7 @@
 // importar archivo utils
 importScripts('js/utils.js')
 
-const CACHE_STATIC = "twittor-static-2"
+const CACHE_STATIC = "twittor-static-1"
 const CACHE_DYNAMIC = "twittor-dynamic-1"
 const CACHE_DINAMIC_LIMIT = 50
 const CACHE_INMUTABLE = "twittor-inmutable-1"
@@ -29,7 +29,7 @@ const APP_SHELL_INMUTABLE = [
     'js/libs/jquery.js'
 ]
 
-self.addEventListener('install', e => {
+self.addEventListener( 'install', e => {
     const cache_static = caches.open( CACHE_STATIC ).then(cache => {
         return cache.addAll( APP_SHELL_STATIC )
     })
@@ -44,7 +44,7 @@ self.addEventListener('install', e => {
     )
 })
 
-self.addEventListener('activate', e => {
+self.addEventListener( 'activate', e => {
     const delete_caches = caches.keys().then( keys => {
         keys.forEach( key => {
             if ( key !== CACHE_STATIC && key.includes('twittor-static')) {
