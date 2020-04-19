@@ -2,7 +2,7 @@
 // importar archivo utils
 importScripts('js/utils.js')
 
-const CACHE_STATIC = "twittor-static-1"
+const CACHE_STATIC = "twittor-static-2"
 const CACHE_DYNAMIC = "twittor-dynamic-1"
 const CACHE_DINAMIC_LIMIT = 50
 const CACHE_INMUTABLE = "twittor-inmutable-1"
