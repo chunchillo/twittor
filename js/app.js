@@ -1,10 +1,8 @@
 // Regisstro Service Worker
 let origin = window.location.origin
-console.log(origin)
 if ( origin.includes('localhost') || origin.includes('chunchillo.github.io') ) {
     origin += '/twittor/'
 }
-console.log(origin)
 if ( navigator.serviceWorker ) {
     navigator.serviceWorker.register(`${origin}sw.js`)
 }

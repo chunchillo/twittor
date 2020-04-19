@@ -65,4 +65,5 @@ self.addEventListener( 'fetch', e => {
             })
         }
     })
+    e.respondWith( fetch_event );
 })
