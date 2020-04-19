@@ -8,7 +8,7 @@ const CACHE_DINAMIC_LIMIT = 50
 const CACHE_INMUTABLE = "twittor-inmutable-1"
 
 const APP_SHELL_STATIC  = [
-    '/',
+    // '/',
     'index.html',
     'css/style.css',
     'img/favicon.ico',
