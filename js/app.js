@@ -2,11 +2,11 @@
 let origin = window.location.origin
 console.log(origin)
 if ( origin.includes('localhost') || origin.includes('chunchillo.github.io') ) {
-    origin += '/twittor'
+    origin += '/twittor/'
 }
 console.log(origin)
 if ( navigator.serviceWorker ) {
-    navigator.serviceWorker.register(`${origin}/sw.js`)
+    navigator.serviceWorker.register(`${origin}sw.js`)
 }
 
 // Referencias de jQuery
