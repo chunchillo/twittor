@@ -50,6 +50,9 @@ self.addEventListener( 'activate', e => {
             if ( key !== CACHE_STATIC && key.includes('twittor-static')) {
                 return caches.delete(key)
             }
+            if ( key !== CACHE_DYNAMIC && key.includes('twittor-dynamic')) {
+                return caches.delete(key)
+            }
         })
     })
     e.waitUntil( delete_caches )
