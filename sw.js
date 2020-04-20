@@ -3,9 +3,9 @@
 importScripts('js/utils.js')
 
 const CACHE_STATIC = "twittor-static-2"
-const CACHE_DYNAMIC = "twittor-dynamic-1"
+const CACHE_DYNAMIC = "twittor-dynamic-2"
 const CACHE_DINAMIC_LIMIT = 50
-const CACHE_INMUTABLE = "twittor-inmutable-1"
+const CACHE_INMUTABLE = "twittor-inmutable-2"
 
 const APP_SHELL_STATIC  = [
     // '/',
